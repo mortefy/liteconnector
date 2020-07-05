@@ -8,7 +8,7 @@ from liteconnector import LiteConnector
 db = LiteConnector("sqlite3.db")
 
 # fetch example
-result = db.fetchfrombase('select id from stats where date = ?', (time_now,))
+result = db.fetchfrombase('SELECT id FROM stats WHERE date = ?', (time_now,))
 # commit example
-db.committobase('insert into stats (date, id) values (?,?)', (time_now, id))
+db.committobase('INSERT INTO stats (date, id) VALUES (?,?)', (time_now, id))
 ```
