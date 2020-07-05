@@ -1,5 +1,5 @@
 # liteconnector
-Simple and easy to use Sqlite3 connector for python3. also can be used in sync apps
+Simple and easy to use Sqlite3 connector for python3. Also can be used in sync apps.
 
 
 How to use:
