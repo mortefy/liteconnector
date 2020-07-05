@@ -7,8 +7,10 @@ How to use:
 from liteconnector import LiteConnector
 db = LiteConnector("sqlite3.db")
 
+# commit example
+db.committobase('CREATE TABLE stats (date DATETIME, id INTEGER)', ())
+db.committobase('INSERT INTO stats (date, id) VALUES (?,?)', (time_now, id))
 # fetch example
 result = db.fetchfrombase('SELECT id FROM stats WHERE date = ?', (time_now,))
-# commit example
-db.committobase('INSERT INTO stats (date, id) VALUES (?,?)', (time_now, id))
+)
 ```
